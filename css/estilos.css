@@ -1,0 +1,55 @@
+@font-face {
+    font-family: 'Product Sans Black';
+    src: url('../fonts/prouct_sans_black.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Product Sans Regular';
+    src: url('../fonts/product_sans_regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Consolas';
+    src: url('../fonts/consola.ttf') format('truetype');
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0px 0px 0px 0px;
+    height: 100%;
+}
+
+.contenedor {
+    width: 80%;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+#logo {
+    background-image: url(../images/iso.png);
+    width: 150px;
+    height: 60px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    float: left;
+}
+
+.itemMenu {
+    float: right;
+    margin-right: 50px;
+    font-family: Product Sans Black;
+    color: black;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.banner {
+    padding: 20px;
+}
