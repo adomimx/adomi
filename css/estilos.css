@@ -23,33 +23,349 @@ body {
 }
 
 .contenedor {
-    width: 80%;
+    width: 70%;
     margin: auto;
+    height: 100%;
 }
 
 a {
     text-decoration: none;
 }
 
+div {
+    font-family: Product Sans Regular;
+}
+
+.menu {
+    position: relative;
+    transform: translateY(-50%);
+    float: right;
+    -webkit-transform: translateY(-50%);
+    width: 100%;
+}
+
 #logo {
-    background-image: url(../images/iso.png);
-    width: 150px;
-    height: 60px;
+    background-image: url(../images/adomi.png);
     background-size: 100%;
     background-repeat: no-repeat;
+    width: 120px;
+    height: 48px;
     cursor: pointer;
     float: left;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
+
+#selected {
+    font-family: Product Sans Black;
 }
 
 .itemMenu {
-    float: right;
     margin-right: 50px;
-    font-family: Product Sans Black;
-    color: black;
+    font-family: Product Sans Regular;
+    color: white;
     font-size: 20px;
-    margin-top: 20px;
+    float: right;
 }
 
 .banner {
-    padding: 20px;
+    width: 70%;
+    height: 100%;
+    margin: auto;
+}
+
+.conatiner_banner {
+    width: 100%;
+    height: 10%;
+    background-color: black;
+}
+
+.full_container {
+    width: 70%;
+    margin: auto;
+    height: 100%;
+    position: relative;
+}
+
+.left_side {
+    width: 50%;
+    margin: auto;
+    float: left;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left_side_quarter {
+    width: 50%;
+    margin: auto;
+    float: left;
+    height: 100%;
+}
+
+.right_side {
+    width: 50%;
+    margin: auto;
+    float: right;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right_side_quarter {
+    width: 50%;
+    margin: auto;
+    float: right;
+    height: 100%;
+}
+
+#image_phone {
+    width: 55%;
+    height: 100%;
+    background-image: url(../images/phone.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.center_text {
+    width: 80%;
+    font-size: 2em;
+    text-align: justify;
+    height: 80%;
+}
+
+#image_playstore {
+    width: 180px;
+    height: 55px;;
+    margin-top: 5%;
+    background-image: url(../images/google-play-badge.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+#primera_app {
+    height: 43%;
+    font-family: Product Sans Black;
+    font-size: 2.5em;
+}
+
+#QuedateEnCasa{
+    font-family: Product Sans Regular;
+    font-size: 1em;
+}
+
+.footer {
+    width: 100%;
+    height: 15%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quarter {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image_full {
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/google-play-badge.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.quarter_center_text{
+    font-size: 30px;
+    text-align: justify;
+    padding: 10%;
+}
+
+.infography{
+    width: 360px;
+    height: 400px;
+    float: left;
+    margin: 8px;
+    background-color: beige;
+}
+
+.image_infography{
+    width: 60%;
+    margin: auto;
+    height: 300px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: center;
+}
+
+.card {
+    font-family: Product Sans Regular;
+    font-size: 1.5em;
+    margin-bottom: 50px;
+}
+
+.text_diiv_title {
+    font-size: 3em;
+    margin-bottom: 20px;
+    font-family: Product Sans Black;
+    text-align: center;
+}
+
+.text_diiv_text {
+    font-size: 1.5em;
+    margin-bottom: 100px;
+    font-family: Product Sans;
+    text-align: justify;
+}
+
+.section {
+    width: 70%;
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom: 300px;
+    text-align: justify;
+}
+
+.footer a {
+    color: white;
+    float: left;
+    margin-right: 20px;
+    font-size: 1.2em;
+}
+
+.footer_menu {
+    margin: auto;
+    height: 20%;
+    text-align: center;
+}
+
+.description_card {
+    opacity: 0.6;
+    font-size: 0.9em;
+}
+
+@media screen and (max-width: 900px){
+    .banner {
+        width: 100%;
+    }
+
+    #logo {
+        top: auto;
+        transform: none;
+        -webkit-transform: none;
+        margin: auto;
+        float: none;
+    }
+
+    .conatiner_banner {
+        padding-top: 14px;
+        position: fixed;
+        z-index: 1000;
+    }
+
+    #section_image_phone {
+        display: none;
+    }
+
+    #section_header {
+        width: 100%;
+        background-image: url(../images/logo.png);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 60%;
+        background-position-x: -93%;
+        background-position-y: 47%;
+        margin-top: 10%;
+    }
+
+    .full_container { 
+        width: 100%;
+        height: 90%;
+    }
+
+    #primera_app {
+        height: 75%;
+        text-align: center;
+    }
+
+    #image_playstore {
+        width: 100%;
+        background-position: center;
+        margin-top: 20%;
+    }
+
+    .section {
+        width: 85%;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .text_diiv_text {
+        margin-bottom: 0px;
+    }
+
+    .image_infography {
+        height: 240px;
+    }
+
+    #footer_menu {
+        display: grid;
+        margin-top: 5%;
+    }
+    
+    .footer{
+        height: 36%;
+        display: inline-block;
+        padding-left: 10%;
+    }
+
+    #footer_menu a {
+        margin-top: 15px;
+    }
+
+    .itemMenu{
+        width: 100%;
+        padding: 10px;
+        margin-top: 0px;
+        margin-left: 0px;
+        float: left;
+        text-align: left;
+        color: white;
+    }
+
+    .menu{
+        display: none;
+        width: 100%;
+        background-color: black;
+        display: none;
+        padding-top: 162px;
+        z-index: -10;
+    }
+
+    #icon{
+        float: left;
+        display: block;
+        position: absolute;
+        left: 0px;
+        top: 30px;
+        left: 20px;
+        color: white;
+        background-color: transparent;
+        padding-left: 12px;
+        padding-right: 12px;
+        padding-bottom: 9px;
+        z-index: 9999;
+    }
+
 }

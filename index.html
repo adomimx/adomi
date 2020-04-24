@@ -15,10 +15,14 @@
         
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+        <script src="js/controlador.js"></script>
     </head>
 
     <body>
-        <div class="contenedor">
+        <div class="conatiner_banner">
             <div class="banner">
                 <div id="logo"></a></div>
                 
@@ -28,9 +32,59 @@
                     <div> <a href="index.html" class="itemMenu" id="selected">Inicio</a></div>
                 </div>
 
+                <div><a href="javascript:void(0);" id="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a></div>
+            </div>
+        </div>
+
+        <div class="full_container">
+            <div class="left_side" id="section_image_phone">
+                <div id="image_phone">
+
+                </div>
             </div>
 
-           
+            <div class="right_side" id="section_header">
+                <div class="center_text" id="primera_app">
+                    La primera app de domicilios en Tlayacapan.
+                    <div id="image_playstore"></div>
+                    <p id="QuedateEnCasa">#QuedateEnCasa y pide todo a domicilio.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="text_diiv_title">¿Qué es adomi?</div>
+            <div class="text_diiv_text">Es un servicio de domicilios con un market place integrado. Los usuarios pueden explorar todos los negocios, productos y servicios que se ofrecen en su ciudad y adquirir cualquier producto de estos a domicilio, sin importar si el negocio ofrece el servicio por sí mismo. </div>
+            <div class="w3-row w3">  
+                <div class="w3-third w3-container card">
+                    <div class="image_infography" style="background-image: url(images/logo.png);"></div>
+                    <br><b>Todo a domicilio</b><br><br>
+                    <div class="description_card">Encuentra todas las tiendas y productos que se ofrecen cerca de ti, ¿No esta alguno?, ¡No importa!, si cabe en una moto, ¡te lo llevamos! </div>
+                </div>
+                
+                <div class="w3-third w3-container card">
+                    <div class="image_infography" style="background-image: url(images/logobusiness.png);"></div>
+                    <br><b>Emprende tu negocio</b><br><br>
+                    <div class="description_card">Registra tu negocio en la app, y comienza a ofrecer tus productos y servicios en línea. Además, puedes ofrecer el servicio a domicilio, sin cargos adicionales para ti. ¿No tienes un negocio y sabes hacer algo?, crea tu tienda dentro de la app y empieza a ganar dinero de aquello que sabes hacer.</div> 
+                </div>
+                
+                <div class="w3-third w3-container card">
+                    <div class="image_infography" style="background-image: url(images/logodriver.png);"></div>
+                    <br><b>Viaja</b><br><br>
+                    <div class="description_card">¿Necesitas un viaje de moto taxi?, solicítalo desde la aplicación, y llegara por ti en un par de minutos hasta tu ubicación. También puedes pedir recorridos turísticos y te recogemos donde estés. </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div id="footer_menu">
+                <a href="">Ayuda</a>
+                <a href="">Socios</a>
+                <a href="">Negocios</a>
+                <a href="">Ventas</a>
+                <a href="">Políticas de privacidad</a>    
+                <a href="">Términos</a> 
+            </div>   
         </div>
     </body>
 </html> 
