@@ -183,7 +183,6 @@ div {
 .image_full {
     width: 100%;
     height: 100%;
-    background-image: url(../images/google-play-badge.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -235,7 +234,7 @@ div {
     width: 70%;
     margin: auto;
     margin-top: 80px;
-    margin-bottom: 300px;
+    margin-bottom: 160px;
     text-align: justify;
 }
 
@@ -257,6 +256,87 @@ div {
     font-size: 0.9em;
 }
 
+.socialMediaIcons {
+    width: 30px;
+    height: 30px;
+    float: left;
+    margin-right: 20px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.socialMediaPanel {
+    margin-top: 20px;
+}
+
+.socialMediaIcons:hover{
+    filter: none;
+    -webkit-filter: grayscale(0);
+}
+
+.contact-right {
+    height: auto; 
+    padding: 5%;
+    display: block;
+}
+
+.container-contact {
+    width: 100%;
+}
+
+/* TEST */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: #207BF6;
+    color: white;
+  }
+  
+  .topnav .icon {
+    display: none;
+  }
+/* TEST */
+
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
 @media screen and (max-width: 900px){
     .banner {
         width: 100%;
@@ -274,6 +354,7 @@ div {
         padding-top: 14px;
         position: fixed;
         z-index: 1000;
+        height: auto;
     }
 
     #section_image_phone {
@@ -294,7 +375,8 @@ div {
 
     .full_container { 
         width: 100%;
-        height: 90%;
+        height: auto;
+        padding-top: 15%;
     }
 
     #primera_app {
@@ -324,11 +406,12 @@ div {
 
     #footer_menu {
         display: grid;
+        margin-bottom: 5%;
         margin-top: 5%;
     }
     
     .footer{
-        height: 36%;
+        height: auto;
         display: inline-block;
         padding-left: 10%;
     }
@@ -369,6 +452,19 @@ div {
         padding-right: 12px;
         padding-bottom: 9px;
         z-index: 9999;
+    }
+
+    .contact-right {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .contact-left {
+        display: none;
+    }
+
+    .container-contact {
+        height: 100%;
     }
 
 }
